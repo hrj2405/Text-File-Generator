@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="path/to/your/script.js"></script>
+  
+  <title img="lib.jpg">Student Records</title>
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar-logo">Student Records</div>
+    <ul class="navbar-links">
+      <li><a class="navbar-link" href="#">Home</a></li>
+      <li><a class="navbar-link" href="#">About</a></li>
+      <li><a class="navbar-link" href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <div class="container">
+      <h2>Student Records</h2>
+      <form id="studentForm">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="rollNo">Roll Number:</label>
+          <input type="text" id="rollNo" name="rollNo" required>
+        </div>
+        <div class="form-group">
+          <label for="branch">Branch:</label>
+          <input type="text" id="branch" name="branch" pattern="[A-Za-z ]+" title="Only alphabetic characters are allowed" required>
+        </div>
+        <div class="form-group">
+          <label for="year">Year:</label>
+          <select id="year" name="year" required>
+            <option value="" disabled selected>Select Year</option>
+            <option value="1">1st Year</option>
+            <option value="2">2nd Year</option>
+            <option value="3">3rd Year</option>
+            <option value="4">4th Year</option>
+          </select>
+        </div>
+        <button type="button" onclick="saveRecord()">Save Record</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2023 Student Records. All rights reserved.
+  </div>
+  
+</body>
+</html>
